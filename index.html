@@ -2374,7 +2374,7 @@ function generateAnalysis(
 
     Pengeluaran terbesar berada
     pada kategori
-    <b>${topCategory}</b>
+    <b>${escapeHTML(topCategory)}</b>
     sebesar
     <b>${rupiah(
       topAmount
@@ -2421,7 +2421,7 @@ function generateAnalysis(
       <br><br>
 
       Kategori terbesar berikutnya:
-      <b>${sorted[1][0]}</b>
+      <b>${escapeHTML(sorted[1][0])}</b>
       sebesar
       <b>${rupiah(
         sorted[1][1]
